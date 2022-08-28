@@ -2,8 +2,8 @@ from . import __version__ as app_version
 
 app_name = "alignims"
 app_title = "Alignims"
-app_publisher = "Valignit"
-app_description = "IMS"
+app_publisher = "valignit"
+app_description = "ims"
 app_email = "ghouseam@valignit.com"
 app_license = "MIT"
 

@@ -1,6 +1,6 @@
 ## Alignims
 
-IMS
+ims
 
 #### License
 

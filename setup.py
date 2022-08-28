@@ -9,8 +9,8 @@ from alignims import __version__ as version
 setup(
 	name="alignims",
 	version=version,
-	description="IMS",
-	author="Valignit",
+	description="ims",
+	author="valignit",
 	author_email="ghouseam@valignit.com",
 	packages=find_packages(),
 	zip_safe=False,
