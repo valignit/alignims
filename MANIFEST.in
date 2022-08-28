@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include alignims *.css
+recursive-include alignims *.csv
+recursive-include alignims *.html
+recursive-include alignims *.ico
+recursive-include alignims *.js
+recursive-include alignims *.json
+recursive-include alignims *.md
+recursive-include alignims *.png
+recursive-include alignims *.py
+recursive-include alignims *.svg
+recursive-include alignims *.txt
+recursive-exclude alignims *.pyc
