@@ -9,9 +9,9 @@ from alignims import __version__ as version
 setup(
 	name="alignims",
 	version=version,
-	description="Investment Management Suite",
-	author="Valignit",
-	author_email="ghouseam@valignit.com",
+	description="xx",
+	author="x",
+	author_email="x",
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,
