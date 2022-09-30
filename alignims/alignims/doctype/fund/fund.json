@@ -1,0 +1,242 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-09-20 07:18:38.156131",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "fund_scheme_name",
+  "duration_section",
+  "duration_type",
+  "column_break_5",
+  "opening_date",
+  "closing_date",
+  "valuation_section",
+  "total_units",
+  "allocated_units",
+  "column_break_11",
+  "initial_nav_per_unit",
+  "current_nav_per_unit",
+  "accounts_section",
+  "capital_account",
+  "current_account",
+  "omnibus_account",
+  "column_break_18",
+  "portfolio_cash_account",
+  "portfolio_stock_account",
+  "portfolio_receivable_account",
+  "customer_cash_account",
+  "customer_stock_account",
+  "column_break_24",
+  "fee_income_account",
+  "dividend_income_account",
+  "interest_income_account",
+  "profit_on_sale_account",
+  "loss_on_sale_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "naming_series",
+   "options": "FUND-.####",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fund_scheme_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Fund Scheme Name"
+  },
+  {
+   "fieldname": "duration_section",
+   "fieldtype": "Section Break",
+   "label": "Duration"
+  },
+  {
+   "default": "Open Ended",
+   "fieldname": "duration_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Duration Type",
+   "options": "Open Ended\nClosed Ended\nInterval",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "opening_date",
+   "fieldtype": "Date",
+   "label": "Opening Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "closing_date",
+   "fieldtype": "Data",
+   "label": "Closing Date",
+   "mandatory_depends_on": "eval:doc.duration_type==\"Closed Ended\""
+  },
+  {
+   "fieldname": "valuation_section",
+   "fieldtype": "Section Break",
+   "label": "Valuation"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_units",
+   "fieldtype": "Int",
+   "label": "Total Units",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "allocated_units",
+   "fieldtype": "Int",
+   "label": "Allocated Units",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.0000",
+   "fieldname": "initial_nav_per_unit",
+   "fieldtype": "Currency",
+   "label": "Initial NAV per Unit",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "default": "0.0000",
+   "fieldname": "current_nav_per_unit",
+   "fieldtype": "Currency",
+   "label": "Current NAV per Unit",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accounts_section",
+   "fieldtype": "Section Break",
+   "label": "Accounts"
+  },
+  {
+   "fieldname": "capital_account",
+   "fieldtype": "Link",
+   "label": "Capital Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "current_account",
+   "fieldtype": "Link",
+   "label": "Current Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "omnibus_account",
+   "fieldtype": "Link",
+   "label": "Omnibus Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "portfolio_cash_account",
+   "fieldtype": "Link",
+   "label": "Portfolio Cash Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "portfolio_stock_account",
+   "fieldtype": "Link",
+   "label": "Portfolio Stock Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "portfolio_receivable_account",
+   "fieldtype": "Link",
+   "label": "Portfolio Receivable Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "customer_cash_account",
+   "fieldtype": "Link",
+   "label": "Customer Cash Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "customer_stock_account",
+   "fieldtype": "Link",
+   "label": "Customer Stock Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fee_income_account",
+   "fieldtype": "Link",
+   "label": "Fee Income Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "dividend_income_account",
+   "fieldtype": "Link",
+   "label": "Dividend Income Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "interest_income_account",
+   "fieldtype": "Link",
+   "label": "Interest Income Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "profit_on_sale_account",
+   "fieldtype": "Link",
+   "label": "Profit on Sale Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "loss_on_sale_account",
+   "fieldtype": "Link",
+   "label": "Loss on Sale Account",
+   "options": "Account"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-30 10:06:45.464678",
+ "modified_by": "Administrator",
+ "module": "Alignims",
+ "name": "Fund",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "fund_scheme_name"
+}
